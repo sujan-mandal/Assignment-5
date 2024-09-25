@@ -1,48 +1,94 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-
-</head>
-<body>
-    <div  class="px-16">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate Bangladesh</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="max-w-[1440px] mx-auto">
+    <navbar>
+      <div
+        class="justify-between px-20 pt-10 pb-20 bg-[#F9F7F3] navbar bg-base-100"
+      >
         <div>
-            <h1 class="text-3xl font-extrabold my-10">Important FAQ</h1>
+          <div class="dropdown">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn btn-ghost lg:hidden"
+            ></div>
+          </div>
+          <div class="navbar-end">
+            <a href="/" class="btn text-xl px-10 font-bold bg-[#B4F461]">Home</a>
+          </div>
         </div>
-        <div class="join join-vertical w-full">
-            <div class="collapse collapse-arrow join-item border-base-300 border">
-              <input type="radio" name="my-accordion-4" checked="checked" />
-              <div class="collapse-title text-xl font-medium">What is the Document Object Modal(DOM)?</div>
-              <div class="collapse-content">
-                <p>The DOM is an interface for manipulating HTML documents as a tree structure.</p>
-              </div>
-            </div>
-            <div class="collapse collapse-arrow join-item border-base-300 border">
-              <input type="radio" name="my-accordion-4" />
-              <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
-              <div class="collapse-content">
-                <p>These methods allow you to access and manipulate the desired elements effectively.</p>
-              </div>
-            </div>
-            <div class="collapse collapse-arrow join-item border-base-300 border">
-              <input type="radio" name="my-accordion-4" />
-              <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM,and why is it useful?</div>
-              <div class="collapse-content">
-                <p>Event delegation uses one event listener on a parent element to handle events for its child elements.</p>
-              </div>
-            </div>
-            <div class="collapse collapse-arrow join-item border-base-300 border">
-              <input type="radio" name="my-accordion-4" />
-              <div class="collapse-title text-xl font-medium">How do you manlpulate an element's attributes and style using the DOM?</div>
-              <div class="collapse-content">
-                <p> An element's attributes and styles in the DOM using various methods. </p>
-              </div>
+        <div>
+          <img src="assets/logo.png" alt="" />
+          <h1 class="text-3xl mx-5 font-bold">Donate Bangladesh</h1>
+        </div>
+        <!-- available balance -->
+        <div class="stats shadow">
+          <div class="flex stat">
+            <img src="assets/coin.png" alt="" />
+            <div id="main-balance" class="stat-value">5500</div>
+            <div class="stat-value">BDT</div>
+          </div>
+        </div>
+      </div>
+    </navbar>
+    <!-- User Action Button -->
+    <div class="flex justify-center gap-5 mt-24">
+      <button
+        id="donation-btn"
+        class="px-12 text-2xl font-bold btn btn-lg bg-[#B4F461]"
+      >
+        Donation
+      </button>
+      <button id="history-btn" class="px-12 text-2xl font-bold mx-5 btn btn-lg">
+        History
+      </button>
+    </div>
+
+    <main><div  class="px-16">
+      <div>
+          <h1 class="text-3xl font-extrabold my-10">Important FAQ</h1>
+      </div>
+      <div class="join join-vertical w-full">
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is the Document Object Modal(DOM)?</div>
+            <div class="collapse-content">
+              <p>The DOM is an interface for manipulating HTML documents as a tree structure.</p>
             </div>
           </div>
-    </div>
-</body>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+              <p>These methods allow you to access and manipulate the desired elements effectively.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM,and why is it useful?</div>
+            <div class="collapse-content">
+              <p>Event delegation uses one event listener on a parent element to handle events for its child elements.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">How do you manlpulate an element's attributes and style using the DOM?</div>
+            <div class="collapse-content">
+              <p> An element's attributes and styles in the DOM using various methods. </p>
+            </div>
+          </div>
+        </div>
+  </div></main>
+  </body>
 </html>
